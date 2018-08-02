@@ -1,0 +1,12 @@
+CREATE DATABASE `log_schema` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */;
+
+CREATE TABLE `log` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp(3) NOT NULL,
+  `ip` varchar(45) NOT NULL,
+  `request` varchar(45) NOT NULL,
+  `status` varchar(45) NOT NULL,
+  `userAgent` varchar(150) NOT NULL,
+  `comment` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4505 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

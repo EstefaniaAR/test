@@ -1,0 +1,16 @@
+find rows between a date range
+
+SELECT ip, COUNT(ip) as requests FROM log
+WHERE date BETWEEN REPLACE('2017-01-01.13:00:00',".",' ')
+AND REPLACE('2017-01-01.14:00:00',".",' ')
+GROUP BY (ip) 
+HAVING requests > 100;
+
+
+find rows by IP
+
+SELECT ip, COUNT(ip) as requests FROM log
+WHERE date BETWEEN REPLACE('2017-01-01.13:00:00',".",' ')
+AND REPLACE('2017-01-01.14:00:00',".",' ')
+and ip ='192.168.77.101'
+GROUP BY (ip) ;
