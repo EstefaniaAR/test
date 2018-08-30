@@ -1,2 +1,4 @@
 # test
-a repository wich contains my technical test
+a repository which contains my technical test
+Visit the wiki
+https://github.com/EstefaniaAR/test/wiki
